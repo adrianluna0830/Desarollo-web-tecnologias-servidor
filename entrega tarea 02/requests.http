@@ -1,5 +1,9 @@
-### Saludo: 200
+### Sin nombre: 200, Hola Mundo
 GET http://localhost:8080/api/v1/saludo
+Accept: application/json
+
+### Con nombre: 200, Hola Ada
+GET http://localhost:8080/api/v1/saludo?nombre=Ada
 Accept: application/json
 
 ### Ruta inexistente: 404
