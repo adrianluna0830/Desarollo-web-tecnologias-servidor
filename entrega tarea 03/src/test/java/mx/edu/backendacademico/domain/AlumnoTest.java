@@ -23,4 +23,19 @@ class AlumnoTest {
         assertThrows(IllegalArgumentException.class, () ->
             new Materia(null, "m1", "analisis", 0));
     }
+
+    @Test void reactivar() {
+        var alumno = new Alumno(1L, "a1", "ada", "ada@u.mx", EstatusAlumno.BAJA);
+        var activo = alumno.reactivar();
+        assertEquals(new Alumno(1L, "a1", "ada", "ada@u.mx", EstatusAlumno.ACTIVO), activo);
+        assertEquals(EstatusAlumno.BAJA, alumno.estatus());
+        assertNotSame(alumno, activo);
+    }
+
+    @Test void igualdad() {
+        var uno = new Alumno(1L, "a1", "ada", "ada@u.mx", EstatusAlumno.ACTIVO);
+        var otro = new Alumno(1L, "a1", "ada", "nuevo@u.mx", EstatusAlumno.ACTIVO);
+        assertEquals(uno.id(), otro.id());
+        assertNotEquals(uno, otro);
+    }
 }
