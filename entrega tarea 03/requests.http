@@ -1,0 +1,8 @@
+GET http://localhost:8080/api/v1/saludo
+Accept: application/json
+
+###
+GET http://localhost:8080/api/v1/no-existe
+
+###
+POST http://localhost:8080/api/v1/saludo
