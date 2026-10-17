@@ -9,6 +9,7 @@ main conserva un commit por unidad, doce en total. cada rama de reto tiene un co
 | 01 | entrega tarea 01 | reto-u01 |
 | 02 | entrega tarea 02 | reto-u02 |
 | 03 | entrega tarea 03 | reto-u03 |
+| 04 | entrega tarea 04 | reto-u04 |
 
 para la solucion de la unidad 5, cambia a main y abre entrega tarea 05. para su reto:
 
