@@ -1,0 +1,4 @@
+crear: 201; location: /api/v1/alumnos/1
+consultar: 200
+actualizar: 200; nombre=ada byron
+eliminar: 204; sin cuerpo
