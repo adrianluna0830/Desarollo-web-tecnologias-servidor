@@ -1,6 +1,8 @@
 package mx.edu.backendacademico.controller;
 
 import java.net.URI;
+import mx.edu.backendacademico.domain.EstatusAlumno;
+import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 import mx.edu.backendacademico.dto.ActualizarAlumnoRequest;
 import mx.edu.backendacademico.dto.AlumnoMapper;
@@ -23,7 +25,10 @@ public class AlumnoController {
     private final AlumnoService service;
     public AlumnoController(AlumnoService service) { this.service = service; }
     @GetMapping
-    public List<AlumnoResponse> listar() { return service.listar().stream().map(AlumnoMapper::toResponse).toList(); }
+    public List<AlumnoResponse> listar(@RequestParam(required = false) EstatusAlumno estatus) {
+        return service.listar().stream().filter(a -> estatus == null || a.estatus() == estatus)
+            .map(AlumnoMapper::toResponse).toList();
+    }
     @GetMapping("/{id}")
     public AlumnoResponse buscar(@PathVariable Long id) { return AlumnoMapper.toResponse(service.buscar(id)); }
     @PostMapping

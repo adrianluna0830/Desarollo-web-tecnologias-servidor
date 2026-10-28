@@ -1,6 +1,6 @@
 # entregas del curso
 
-esta version contiene las soluciones guiadas. los retos se consultan en sus ramas respectivas.
+esta rama contiene el reto de la unidad 5 integrado en entrega tarea 05. las otras entregas conservan su solucion guiada.
 
 main conserva un commit por unidad, doce en total. cada rama de reto tiene un commit independiente sobre la solucion de su unidad; al contar todas las ramas se incluyen tambien esos commits.
 
