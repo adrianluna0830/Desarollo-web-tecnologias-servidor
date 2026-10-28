@@ -1,0 +1,7 @@
+crear: 201; location: /api/v1/alumnos/1
+consultar: 200
+actualizar: 200; nombre=ada byron
+vacio: 400; codigo=DATOS_INVALIDOS
+duplicado: 409; codigo=MATRICULA_DUPLICADA
+ausente: 404
+eliminar: 204; sin cuerpo
