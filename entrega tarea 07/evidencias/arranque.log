@@ -1,0 +1,55 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-10-19T20:27:56.629-06:00  INFO 35015 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Starting BackendAcademicoApplication v0.0.7-SNAPSHOT using Java 25.0.4.1 with PID 35015 (/home/ariv0830/Desktop/curso_backend_java21_jdk25/Desarollo web tecnologias servidor/entrega tarea 07/target/backend-academico-0.0.7-SNAPSHOT.jar started by ariv0830 in /home/ariv0830/Desktop/curso_backend_java21_jdk25/Desarollo web tecnologias servidor/entrega tarea 07)
+2026-10-19T20:27:56.636-06:00  INFO 35015 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : No active profile set, falling back to 1 default profile: "jpa"
+2026-10-19T20:27:57.885-06:00  INFO 35015 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-19T20:27:57.973-06:00  INFO 35015 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2026-10-19T20:27:58.762-06:00  INFO 35015 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 39841 (http)
+2026-10-19T20:27:58.791-06:00  INFO 35015 --- [backend-academico] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-19T20:27:58.792-06:00  INFO 35015 --- [backend-academico] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-10-19T20:27:58.833-06:00  INFO 35015 --- [backend-academico] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2100 ms
+2026-10-19T20:27:59.500-06:00  INFO 35015 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-19T20:27:59.938-06:00  INFO 35015 --- [backend-academico] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@681c0ae6
+2026-10-19T20:27:59.941-06:00  INFO 35015 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-19T20:27:59.984-06:00  INFO 35015 --- [backend-academico] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:55437/academico (PostgreSQL 17.11)
+2026-10-19T20:28:00.144-06:00  INFO 35015 --- [backend-academico] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.055s)
+2026-10-19T20:28:00.187-06:00  INFO 35015 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2026-10-19T20:28:00.196-06:00  INFO 35015 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-10-19T20:28:00.397-06:00  INFO 35015 --- [backend-academico] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-19T20:28:00.522-06:00  INFO 35015 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-10-19T20:28:01.367-06:00  INFO 35015 --- [backend-academico] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-19T20:28:01.529-06:00  INFO 35015 --- [backend-academico] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:55437/academico]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.11
+	Default catalog/schema: academico/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-19T20:28:02.804-06:00  INFO 35015 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-19T20:28:02.870-06:00  INFO 35015 --- [backend-academico] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-19T20:28:02.908-06:00  INFO 35015 --- [backend-academico] [           main] m.e.backendacademico.config.CicloDeVida  : bean inicializado en 2026-10-20T02:28:02.908160379Z
+2026-10-19T20:28:03.025-06:00  INFO 35015 --- [backend-academico] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-19T20:28:03.977-06:00  INFO 35015 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 39841 (http) with context path '/'
+2026-10-19T20:28:03.987-06:00  INFO 35015 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Started BackendAcademicoApplication in 8.148 seconds (process running for 9.009)
+2026-10-19T20:28:04.059-06:00  INFO 35015 --- [backend-academico] [io-39841-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-19T20:28:04.060-06:00  INFO 35015 --- [backend-academico] [io-39841-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-19T20:28:04.061-06:00  INFO 35015 --- [backend-academico] [io-39841-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-19T20:28:04.285-06:00  INFO 35015 --- [backend-academico] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-19T20:28:04.288-06:00  INFO 35015 --- [backend-academico] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-19T20:28:04.292-06:00  INFO 35015 --- [backend-academico] [ionShutdownHook] m.e.backendacademico.config.CicloDeVida  : cierre del bean de demostracion
+2026-10-19T20:28:04.293-06:00  INFO 35015 --- [backend-academico] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-19T20:28:04.297-06:00  INFO 35015 --- [backend-academico] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-19T20:28:04.301-06:00  INFO 35015 --- [backend-academico] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

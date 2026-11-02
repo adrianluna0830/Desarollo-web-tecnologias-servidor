@@ -1,0 +1,4 @@
+postgresql 17 real; flyway v1 aplicada
+alumno id=1 creado por http: 201
+reinicio de aplicacion: consulta 200; matricula=PERSISTENTE7
+1|t
