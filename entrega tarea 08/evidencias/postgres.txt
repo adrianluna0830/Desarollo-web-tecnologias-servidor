@@ -1,0 +1,4 @@
+inscripcion: 201
+409: INSCRIPCION_DUPLICADA
+409: SIN_CUPO
+historial: 200; {"contenido": [{"id": 1, "materiaId": 1, "materia": "analisis matematico", "fecha": "2026-10-20T02:29:24.550949"}], "pagina": 0, "tamano": 5, "totalElementos": 1, "totalPaginas": 1}
