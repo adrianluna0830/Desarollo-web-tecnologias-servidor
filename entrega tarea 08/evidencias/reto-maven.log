@@ -1,0 +1,174 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/home/ariv0830/.m2/wrapper/dists/apache-maven-3.9.11/a2d47e15/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< mx.edu:backend-academico >----------------------
+[INFO] Building backend-academico-u08 0.0.8-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- clean:3.5.0:clean (default-clean) @ backend-academico ---
+[INFO]
+[INFO] --- resources:3.5.0:resources (default-resources) @ backend-academico ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO]
+[INFO] --- compiler:3.15.0:compile (default-compile) @ backend-academico ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 30 source files with javac [debug parameters release 21] to target/classes
+[INFO]
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ backend-academico ---
+[INFO] skip non existing resourceDirectory /tmp/curso-retos/u08/entrega tarea 08/src/test/resources
+[INFO]
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ backend-academico ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug parameters release 21] to target/test-classes
+[INFO]
+[INFO] --- surefire:3.5.6:test (default-test) @ backend-academico ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running mx.edu.backendacademico.repository.ConcurrenciaTest
+20:29:35.732 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [mx.edu.backendacademico.repository.ConcurrenciaTest]: ConcurrenciaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:29:35.904 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration mx.edu.backendacademico.BackendAcademicoApplication for test class mx.edu.backendacademico.repository.ConcurrenciaTest
+20:29:36.048 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [mx.edu.backendacademico.repository.ConcurrenciaTest]: ConcurrenciaTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:29:36.052 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration mx.edu.backendacademico.BackendAcademicoApplication for test class mx.edu.backendacademico.repository.ConcurrenciaTest
+20:29:36.151 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+20:29:36.155 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+20:29:36.198 [main] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 2.0.5
+20:29:37.781 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=unix:///run/user/1000/podman/podman.sock
+20:29:37.786 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+20:29:37.986 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker:
+  Server Version: 5.8.4
+  API Version: 1.44
+  Operating System: fedora
+  Total Memory: 15851 MB
+20:29:37.991 [main] WARN org.testcontainers.utility.ResourceReaper --
+********************************************************************************
+Ryuk has been disabled. This can cause unexpected behavior in your environment.
+********************************************************************************
+20:29:37.998 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+20:29:37.999 [main] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+20:29:38.094 [main] INFO tc.postgres:17-alpine -- Creating container for image: postgres:17-alpine
+20:29:38.296 [main] INFO tc.postgres:17-alpine -- Container postgres:17-alpine is starting: a4cfb08348ff5c4af200fe22e0489739f73a947f8b6607018e0adfdf803f6e9f
+20:29:41.957 [main] INFO tc.postgres:17-alpine -- Container postgres:17-alpine started in PT3.862263728S
+20:29:41.957 [main] INFO tc.postgres:17-alpine -- Container is started (JDBC URL: jdbc:postgresql://localhost:33817/test?loggerLevel=OFF)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-10-19T20:29:42.366-06:00  INFO 37831 --- [backend-academico] [           main] m.e.b.repository.ConcurrenciaTest        : Starting ConcurrenciaTest using Java 25.0.4.1 with PID 37831 (started by ariv0830 in /tmp/curso-retos/u08/entrega tarea 08)
+2026-10-19T20:29:42.369-06:00  INFO 37831 --- [backend-academico] [           main] m.e.b.repository.ConcurrenciaTest        : No active profile set, falling back to 1 default profile: "jpa"
+2026-10-19T20:29:43.291-06:00  INFO 37831 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-19T20:29:43.395-06:00  INFO 37831 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 3 JPA repository interfaces.
+2026-10-19T20:29:44.157-06:00  INFO 37831 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-19T20:29:44.495-06:00  INFO 37831 --- [backend-academico] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@40a7974
+2026-10-19T20:29:44.498-06:00  INFO 37831 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-19T20:29:44.532-06:00  INFO 37831 --- [backend-academico] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:33817/test?loggerLevel=OFF (PostgreSQL 17.11)
+2026-10-19T20:29:44.627-06:00  INFO 37831 --- [backend-academico] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-10-19T20:29:44.632-06:00  INFO 37831 --- [backend-academico] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.026s)
+2026-10-19T20:29:44.659-06:00  INFO 37831 --- [backend-academico] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-10-19T20:29:44.722-06:00  INFO 37831 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-10-19T20:29:44.734-06:00  INFO 37831 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - crear alumnos"
+2026-10-19T20:29:44.780-06:00  INFO 37831 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - crear materias e inscripciones"
+2026-10-19T20:29:44.830-06:00  INFO 37831 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "public", now at version v2 (execution time 00:00.044s)
+2026-10-19T20:29:45.001-06:00  INFO 37831 --- [backend-academico] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-19T20:29:45.088-06:00  INFO 37831 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-10-19T20:29:45.717-06:00  INFO 37831 --- [backend-academico] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-19T20:29:45.861-06:00  INFO 37831 --- [backend-academico] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:33817/test?loggerLevel=OFF]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.11
+	Default catalog/schema: test/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-19T20:29:47.056-06:00  INFO 37831 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-19T20:29:47.114-06:00  INFO 37831 --- [backend-academico] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-19T20:29:47.145-06:00  INFO 37831 --- [backend-academico] [           main] m.e.backendacademico.config.CicloDeVida  : bean inicializado en 2026-10-20T02:29:47.145756242Z
+2026-10-19T20:29:47.249-06:00  INFO 37831 --- [backend-academico] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-19T20:29:48.961-06:00  INFO 37831 --- [backend-academico] [           main] m.e.b.repository.ConcurrenciaTest        : Started ConcurrenciaTest in 6.96 seconds (process running for 14.815)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (/home/ariv0830/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.10/byte-buddy-agent-1.18.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+conexiones en espera de bloqueo postgres: 2
+admisiones: [SIN_CUPO, creada]; inscripciones persistidas: 1
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.99 s -- in mx.edu.backendacademico.repository.ConcurrenciaTest
+[INFO] Running mx.edu.backendacademico.domain.AlumnoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.010 s -- in mx.edu.backendacademico.domain.AlumnoTest
+[INFO] Running mx.edu.backendacademico.BackendAcademicoApplicationTests
+2026-10-19T20:29:50.444-06:00  INFO 37831 --- [backend-academico] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [mx.edu.backendacademico.BackendAcademicoApplicationTests]: BackendAcademicoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-19T20:29:50.453-06:00  INFO 37831 --- [backend-academico] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration mx.edu.backendacademico.BackendAcademicoApplication for test class mx.edu.backendacademico.BackendAcademicoApplicationTests
+2026-10-19T20:29:50.455-06:00  INFO 37831 --- [backend-academico] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [mx.edu.backendacademico.BackendAcademicoApplicationTests]: BackendAcademicoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-19T20:29:50.457-06:00  INFO 37831 --- [backend-academico] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration mx.edu.backendacademico.BackendAcademicoApplication for test class mx.edu.backendacademico.BackendAcademicoApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-10-19T20:29:50.507-06:00  INFO 37831 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplicationTests   : Starting BackendAcademicoApplicationTests using Java 25.0.4.1 with PID 37831 (started by ariv0830 in /tmp/curso-retos/u08/entrega tarea 08)
+2026-10-19T20:29:50.507-06:00  INFO 37831 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplicationTests   : No active profile set, falling back to 1 default profile: "jpa"
+2026-10-19T20:29:50.726-06:00  INFO 37831 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-19T20:29:50.740-06:00  INFO 37831 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+2026-10-19T20:29:50.884-06:00  INFO 37831 --- [backend-academico] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-19T20:29:50.933-06:00  INFO 37831 --- [backend-academico] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-19T20:29:50.934-06:00  INFO 37831 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-10-19T20:29:51.160-06:00  INFO 37831 --- [backend-academico] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn0: url=jdbc:h2:mem:contexto user=SA
+2026-10-19T20:29:51.161-06:00  INFO 37831 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-10-19T20:29:51.176-06:00  INFO 37831 --- [backend-academico] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:contexto]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: CONTEXTO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-19T20:29:51.274-06:00  INFO 37831 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-19T20:29:51.334-06:00  INFO 37831 --- [backend-academico] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-19T20:29:51.337-06:00  INFO 37831 --- [backend-academico] [           main] m.e.backendacademico.config.CicloDeVida  : bean inicializado en 2026-10-20T02:29:51.337314050Z
+2026-10-19T20:29:51.619-06:00  INFO 37831 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplicationTests   : Started BackendAcademicoApplicationTests in 1.153 seconds (process running for 17.473)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.189 s -- in mx.edu.backendacademico.BackendAcademicoApplicationTests
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jar:3.5.0:jar (default-jar) @ backend-academico ---
+[INFO] Building jar: /tmp/curso-retos/u08/entrega tarea 08/target/backend-academico-0.0.8-SNAPSHOT.jar
+[INFO]
+[INFO] --- spring-boot:4.1.0:repackage (repackage) @ backend-academico ---
+[INFO] Replacing main artifact /tmp/curso-retos/u08/entrega tarea 08/target/backend-academico-0.0.8-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /tmp/curso-retos/u08/entrega tarea 08/target/backend-academico-0.0.8-SNAPSHOT.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  25.062 s
+[INFO] Finished at: 2026-10-19T20:29:52-06:00
+[INFO] ------------------------------------------------------------------------
