@@ -1,0 +1,9 @@
+copia de laboratorio: reto7, creada desde academico
+antes y despues: 1|PERSISTENTE7|ada persistente
+tabla oid antes y despues: 16397
+historial:
+1|t
+2|t
+insertar nombre vacio: rechazado por ck_nombre_no_vacio
+base original conserva v1:
+1|t
