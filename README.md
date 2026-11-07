@@ -1,10 +1,8 @@
-# entregas del curso
+# Entregas del curso
 
-esta rama contiene el reto de la unidad 7 integrado en entrega tarea 07. las otras entregas conservan su solucion guiada.
+`main` contiene las prácticas 1 a 7. La práctica 7 incluye la solución guiada y su reto de migraciones en `entrega tarea 07`.
 
-main conserva un commit por unidad, doce en total. cada rama de reto tiene un commit independiente sobre la solucion de su unidad; al contar todas las ramas se incluyen tambien esos commits.
-
-| unidad | carpeta del proyecto | rama del reto |
+| Unidad | Carpeta del proyecto | Rama del reto |
 | --- | --- | --- |
 | 01 | entrega tarea 01 | reto-u01 |
 | 02 | entrega tarea 02 | reto-u02 |
@@ -14,18 +12,19 @@ main conserva un commit por unidad, doce en total. cada rama de reto tiene un co
 | 06 | entrega tarea 06 | reto-u06 |
 | 07 | entrega tarea 07 | reto-u07 |
 
-para la solucion de la unidad 5, cambia a main y abre entrega tarea 05. para su reto:
+La solución guiada de la práctica 7 está en el commit `1d3a828`; el reto está en `8a6a6ab`. Ambos forman parte del historial de `main`. El reto agrega `V2__nombre_no_vacio.sql` sin modificar V1, para rechazar nombres vacíos o compuestos solo por espacios.
+
+## Ejecutar la práctica 7
+
+Configura `JAVA_HOME` con JDK 25. El proyecto compila para Java 21.
 
 ```bash
-git switch reto-u05
-cd 'entrega tarea 05'
+cd 'entrega tarea 07'
 ./mvnw clean verify
 ```
 
-el codigo del reto se integra directamente en la carpeta de la entrega dentro de su rama. no hay carpetas reto, retos ni documentos en los proyectos. la siguiente unidad de main conserva la solucion guiada comun.
+Las cuatro pruebas de contexto y dominio utilizan H2; no requieren PostgreSQL. Para ejecutar la aplicación y comprobar las migraciones y la persistencia, utiliza PostgreSQL 17 y la configuración de `compose.yaml` y `src/main/resources/application.properties`.
 
-configura JAVA_HOME con jdk 25; los pom conservan release 21. desde u09 las pruebas necesitan docker o la api compatible de podman; la prueba de concurrencia del reto u08 tambien lo necesita. usa bases separadas al cambiar de unidad o reto para no mezclar migraciones.
+Usa una base separada para el reto, como `reto7`, para conservar la base de la solución con V1. `verificar.sql` consulta el historial de Flyway, el identificador interno de la tabla y los alumnos guardados. Los registros originales de arranque, pruebas y comprobaciones de PostgreSQL están en `evidencias/`.
 
-los documentos editables siguen fuera del repositorio, en la carpeta principal del curso: Documento tarea NN.docx y .txt. las evidencias de ejecucion estan en cada proyecto. para u12 consulta tambien su readme; para el reto u09 usa mutaciones.py y despues ./mvnw clean verify.
-
-la unidad 5 utiliza el mensaje practica 5; las demas conservan unidad n. los commits de main desde u05 avanzan cinco dias, comenzando el 23/octubre/2026 a las 22:00 en la zona horaria de mexico. en github se publica cada entrega cuando se solicita.
+Los documentos editables permanecen fuera del repositorio, en la carpeta principal del curso: `Documento tarea NN.docx` y `.txt`.
