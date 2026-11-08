@@ -1,0 +1,145 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/home/ariv0830/.m2/wrapper/dists/apache-maven-3.9.11/a2d47e15/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< mx.edu:backend-academico >----------------------
+[INFO] Building backend-academico-u09 0.0.9-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- clean:3.5.0:clean (default-clean) @ backend-academico ---
+[INFO] Deleting /tmp/curso-retos/u09/entrega tarea 09/target
+[INFO]
+[INFO] --- resources:3.5.0:resources (default-resources) @ backend-academico ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO]
+[INFO] --- compiler:3.15.0:compile (default-compile) @ backend-academico ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 30 source files with javac [debug parameters release 21] to target/classes
+[INFO]
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ backend-academico ---
+[INFO] skip non existing resourceDirectory /tmp/curso-retos/u09/entrega tarea 09/src/test/resources
+[INFO]
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ backend-academico ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [debug parameters release 21] to target/test-classes
+[INFO]
+[INFO] --- surefire:3.5.6:test (default-test) @ backend-academico ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running mx.edu.backendacademico.repository.PostgresIntegrationTest
+20:30:37.638 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [mx.edu.backendacademico.repository.PostgresIntegrationTest]: PostgresIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:30:37.829 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration mx.edu.backendacademico.BackendAcademicoApplication for test class mx.edu.backendacademico.repository.PostgresIntegrationTest
+20:30:37.991 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [mx.edu.backendacademico.repository.PostgresIntegrationTest]: PostgresIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:30:37.994 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration mx.edu.backendacademico.BackendAcademicoApplication for test class mx.edu.backendacademico.repository.PostgresIntegrationTest
+20:30:38.094 [main] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+20:30:38.098 [main] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+20:30:38.144 [main] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 2.0.5
+20:30:39.496 [main] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=unix:///run/user/1000/podman/podman.sock
+20:30:39.498 [main] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+20:30:39.681 [main] INFO org.testcontainers.DockerClientFactory -- Connected to docker:
+  Server Version: 5.8.4
+  API Version: 1.44
+  Operating System: fedora
+  Total Memory: 15851 MB
+20:30:39.693 [main] WARN org.testcontainers.utility.ResourceReaper --
+********************************************************************************
+Ryuk has been disabled. This can cause unexpected behavior in your environment.
+********************************************************************************
+20:30:39.697 [main] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+20:30:39.698 [main] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+20:30:39.790 [main] INFO tc.postgres:17-alpine -- Creating container for image: postgres:17-alpine
+20:30:39.947 [main] INFO tc.postgres:17-alpine -- Container postgres:17-alpine is starting: 56e8e9eab54900639fca5da9ea62d98c316dd02efce040202953fcade87d95f8
+20:30:43.459 [main] INFO tc.postgres:17-alpine -- Container postgres:17-alpine started in PT3.668889477S
+20:30:43.460 [main] INFO tc.postgres:17-alpine -- Container is started (JDBC URL: jdbc:postgresql://localhost:39795/test?loggerLevel=OFF)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-10-19T20:30:43.935-06:00  INFO 39188 --- [backend-academico] [           main] m.e.b.r.PostgresIntegrationTest          : Starting PostgresIntegrationTest using Java 25.0.4.1 with PID 39188 (started by ariv0830 in /tmp/curso-retos/u09/entrega tarea 09)
+2026-10-19T20:30:43.940-06:00  INFO 39188 --- [backend-academico] [           main] m.e.b.r.PostgresIntegrationTest          : No active profile set, falling back to 1 default profile: "jpa"
+2026-10-19T20:30:44.932-06:00  INFO 39188 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-19T20:30:45.021-06:00  INFO 39188 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+2026-10-19T20:30:45.794-06:00  INFO 39188 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-19T20:30:46.132-06:00  INFO 39188 --- [backend-academico] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@61d42275
+2026-10-19T20:30:46.135-06:00  INFO 39188 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-19T20:30:46.171-06:00  INFO 39188 --- [backend-academico] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:39795/test?loggerLevel=OFF (PostgreSQL 17.11)
+2026-10-19T20:30:46.268-06:00  INFO 39188 --- [backend-academico] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2026-10-19T20:30:46.273-06:00  INFO 39188 --- [backend-academico] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.030s)
+2026-10-19T20:30:46.297-06:00  INFO 39188 --- [backend-academico] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2026-10-19T20:30:46.360-06:00  INFO 39188 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2026-10-19T20:30:46.370-06:00  INFO 39188 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - crear alumnos"
+2026-10-19T20:30:46.411-06:00  INFO 39188 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - crear materias e inscripciones"
+2026-10-19T20:30:46.452-06:00  INFO 39188 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "public", now at version v2 (execution time 00:00.041s)
+2026-10-19T20:30:46.627-06:00  INFO 39188 --- [backend-academico] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-19T20:30:46.734-06:00  INFO 39188 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-10-19T20:30:47.450-06:00  INFO 39188 --- [backend-academico] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-19T20:30:47.597-06:00  INFO 39188 --- [backend-academico] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:39795/test?loggerLevel=OFF]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.11
+	Default catalog/schema: test/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-19T20:30:48.940-06:00  INFO 39188 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-19T20:30:49.014-06:00  INFO 39188 --- [backend-academico] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-19T20:30:49.051-06:00  INFO 39188 --- [backend-academico] [           main] m.e.backendacademico.config.CicloDeVida  : bean inicializado en 2026-10-20T02:30:49.051349688Z
+2026-10-19T20:30:49.168-06:00  INFO 39188 --- [backend-academico] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-19T20:30:51.519-06:00  INFO 39188 --- [backend-academico] [           main] m.e.b.r.PostgresIntegrationTest          : Started PostgresIntegrationTest in 8.003 seconds (process running for 15.339)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (/home/ariv0830/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.10/byte-buddy-agent-1.18.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.47 s <<< FAILURE! -- in mx.edu.backendacademico.repository.PostgresIntegrationTest
+[ERROR] mx.edu.backendacademico.repository.PostgresIntegrationTest.postgresqlRechazaUnaMatriculaRepetida -- Time elapsed: 0.805 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected org.springframework.dao.DataIntegrityViolationException to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:159)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:74)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3223)
+	at mx.edu.backendacademico.repository.PostgresIntegrationTest.postgresqlRechazaUnaMatriculaRepetida(PostgresIntegrationTest.java:48)
+
+[INFO]
+[INFO] Results:
+[INFO]
+[ERROR] Failures:
+[ERROR]   PostgresIntegrationTest.postgresqlRechazaUnaMatriculaRepetida:48 Expected org.springframework.dao.DataIntegrityViolationException to be thrown, but nothing was thrown.
+[INFO]
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22.822 s
+[INFO] Finished at: 2026-10-19T20:30:53-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.5.6:test (default-test) on project backend-academico: There are test failures.
+[ERROR]
+[ERROR] See /tmp/curso-retos/u09/entrega tarea 09/target/surefire-reports for the individual test results.
+[ERROR] See dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

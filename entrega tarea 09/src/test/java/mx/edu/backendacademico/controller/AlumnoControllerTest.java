@@ -28,4 +28,13 @@ class AlumnoControllerTest {
             .andExpect(jsonPath("$.codigo").value("DATOS_INVALIDOS"));
         org.mockito.Mockito.verifyNoInteractions(service);
     }
+    @Test void crearPublica201YLocation() throws Exception {
+        when(service.crear("a9", "ada", "ada@u.mx")).thenReturn(new Alumno(9L,"a9","ada","ada@u.mx",EstatusAlumno.ACTIVO));
+        mvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post("/api/v1/alumnos")
+            .contentType("application/json").content("""
+                {"matricula":"a9","nombre":"ada","correo":"ada@u.mx"}
+                """))
+            .andExpect(status().isCreated()).andExpect(header().string("Location","/api/v1/alumnos/9"))
+            .andExpect(jsonPath("$.id").value(9));
+    }
 }

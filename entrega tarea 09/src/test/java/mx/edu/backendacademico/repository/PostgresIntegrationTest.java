@@ -43,4 +43,14 @@ class PostgresIntegrationTest {
         assertEquals("SIN_CUPO", llena.getCodigo());
         assertEquals(1, inscripciones.countByMateriaId(materia.getId()));
     }
+    @Test void postgresqlRechazaUnaMatriculaRepetida() {
+        alumnos.saveAndFlush(new AlumnoEntity(new Alumno(null,"unique9","ada","ada@u.mx",EstatusAlumno.ACTIVO)));
+        var ex = assertThrows(org.springframework.dao.DataIntegrityViolationException.class, () ->
+            alumnos.saveAndFlush(new AlumnoEntity(new Alumno(null,"unique9","emmy","emmy@u.mx",EstatusAlumno.ACTIVO))));
+        Throwable causa = ex;
+        while (causa != null && !(causa instanceof java.sql.SQLException)) causa = causa.getCause();
+        assertNotNull(causa);
+        assertEquals("23505", ((java.sql.SQLException) causa).getSQLState());
+        assertEquals("uk_alumnos_matricula", ((org.postgresql.util.PSQLException) causa).getServerErrorMessage().getConstraint());
+    }
 }
