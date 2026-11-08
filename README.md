@@ -1,6 +1,6 @@
 # Entregas del curso
 
-`main` contiene las soluciones guiadas de las tareas 1 a 8. Cada reto se consulta en su rama independiente.
+`main` contiene las soluciones guiadas de las tareas 1 a 9. Cada reto se consulta en su rama independiente.
 
 | Unidad | Carpeta del proyecto | Rama del reto |
 | --- | --- | --- |
@@ -12,12 +12,13 @@
 | 06 | entrega tarea 06 | reto-u06 |
 | 07 | entrega tarea 07 | reto-u07 |
 | 08 | entrega tarea 08 | reto-u08 |
+| 09 | entrega tarea 09 | reto-u09 |
 
-Para ejecutar la solución de la tarea 8, usa `main`. Para ejecutar su reto, usa `reto-u08`. Cada rama de reto parte del commit de la solución de su tarea.
+Para ejecutar la solución de la tarea 9, usa `main`. Para ejecutar su reto, usa `reto-u09`. Cada rama de reto parte del commit de la solución de su tarea.
 
 ```bash
 git switch main
-cd 'entrega tarea 08'
+cd 'entrega tarea 09'
 ./mvnw clean verify
 ```
 
