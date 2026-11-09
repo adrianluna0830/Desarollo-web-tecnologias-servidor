@@ -20,7 +20,8 @@ public class SecurityConfig {
         http.authorizeHttpRequests(auth -> auth
             .requestMatchers("/api/v1/saludo", "/openapi.yaml", "/error").permitAll()
             .requestMatchers("/api/v1/csrf").authenticated()
-            .requestMatchers(HttpMethod.GET, "/api/v1/alumnos/**").hasAnyRole("ALUMNO", "DOCENTE", "ADMIN")
+            .requestMatchers(HttpMethod.GET, "/api/v1/mi-expediente", "/api/v1/expedientes/**").hasAnyRole("ALUMNO", "ADMIN")
+            .requestMatchers(HttpMethod.GET, "/api/v1/alumnos/**").hasAnyRole("DOCENTE", "ADMIN")
             .requestMatchers("/api/v1/**").hasAnyRole("DOCENTE", "ADMIN")
             .anyRequest().denyAll());
         http.httpBasic(withDefaults());
