@@ -47,9 +47,14 @@ paths:
         '403': {$ref: '#/components/responses/Prohibido'}
     post:
       summary: Crea un alumno
-      description: Requiere DOCENTE o ADMIN y un token CSRF de la misma sesión.
+      description: requiere docente o admin y csrf de la misma sesion. con idempotency-key repite la respuesta original; reutilizarla con otro contenido produce 409.
       parameters:
         - {$ref: '#/components/parameters/Csrf'}
+        - name: idempotency-key
+          in: header
+          required: false
+          schema: {type: string, minLength: 1, maxLength: 120}
+          description: clave persistida por usuario autenticado
       requestBody:
         required: true
         content:
