@@ -1,0 +1,129 @@
+ Image curso-u12-main-app Building
+#1 [internal] load local bake definitions
+#1 reading from stdin 656B done
+#1 DONE 0.0s
+
+#2 [internal] booting buildkit
+#2 pulling image moby/buildkit:buildx-stable-1
+#2 pulling image moby/buildkit:buildx-stable-1 8.6s done
+#2 creating container buildx_buildkit_default
+#2 creating container buildx_buildkit_default 1.3s done
+#2 DONE 9.9s
+
+#3 [internal] load build definition from Dockerfile
+#3 transferring dockerfile: 264B done
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/eclipse-temurin:25-jre
+#4 DONE 1.5s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 ...
+
+#7 [1/3] FROM docker.io/library/eclipse-temurin:25-jre@sha256:dbb43d81099eec91e0800226ed2296d03146ee7857165b95112372ad0d67e87f
+#7 resolve docker.io/library/eclipse-temurin:25-jre@sha256:dbb43d81099eec91e0800226ed2296d03146ee7857165b95112372ad0d67e87f 0.0s done
+#7 DONE 0.4s
+
+#6 [internal] load build context
+#6 transferring context: 59.73MB 0.6s done
+#6 DONE 0.6s
+
+#7 [1/3] FROM docker.io/library/eclipse-temurin:25-jre@sha256:dbb43d81099eec91e0800226ed2296d03146ee7857165b95112372ad0d67e87f
+#7 sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 32B / 32B 0.2s done
+#7 sha256:2e60e4e3b521aebc38aa941d295e6e73315c6b6be8156fd0297756d3f006ad9b 0B / 2.46kB 0.2s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 0B / 63.08MB 0.2s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 0B / 12.15MB 0.2s
+#7 sha256:2e60e4e3b521aebc38aa941d295e6e73315c6b6be8156fd0297756d3f006ad9b 2.46kB / 2.46kB 0.3s done
+#7 sha256:d9d511d19a19ebdeda520e0752f184d457905c7a310df5b748d133a51274ecd4 0B / 391B 0.2s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 0B / 42.15MB 0.2s
+#7 sha256:d9d511d19a19ebdeda520e0752f184d457905c7a310df5b748d133a51274ecd4 391B / 391B 0.3s done
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 6.29MB / 63.08MB 0.9s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 1.05MB / 12.15MB 0.9s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 2.10MB / 12.15MB 1.2s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 11.53MB / 63.08MB 1.4s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 16.78MB / 63.08MB 1.5s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 3.15MB / 12.15MB 1.5s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 4.19MB / 12.15MB 1.7s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 23.07MB / 63.08MB 1.8s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 5.24MB / 12.15MB 1.8s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 3.15MB / 42.15MB 1.7s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 34.05MB / 63.08MB 2.3s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 7.34MB / 12.15MB 2.3s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 37.75MB / 63.08MB 2.4s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 8.39MB / 12.15MB 2.4s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 9.44MB / 12.15MB 2.6s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 44.04MB / 63.08MB 2.7s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 6.29MB / 42.15MB 2.6s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 48.23MB / 63.08MB 2.9s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 10.49MB / 12.15MB 2.9s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 54.53MB / 63.08MB 3.0s
+#7 sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 12.15MB / 12.15MB 3.0s done
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 58.72MB / 63.08MB 3.2s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 63.08MB / 63.08MB 3.3s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 9.44MB / 42.15MB 3.3s
+#7 sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 63.08MB / 63.08MB 3.7s done
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 12.58MB / 42.15MB 3.8s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 15.73MB / 42.15MB 4.2s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 18.87MB / 42.15MB 4.5s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 22.02MB / 42.15MB 4.8s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 25.17MB / 42.15MB 5.1s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 29.36MB / 42.15MB 5.4s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 32.51MB / 42.15MB 5.6s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 37.75MB / 42.15MB 5.9s
+#7 sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 42.15MB / 42.15MB 6.3s done
+#7 extracting sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41
+#7 extracting sha256:435bf5c20694c99dd5a9877e58e24b26a2207fcf8c692a3c3ce3c867770a5b41 2.6s done
+#7 DONE 9.6s
+
+#7 [1/3] FROM docker.io/library/eclipse-temurin:25-jre@sha256:dbb43d81099eec91e0800226ed2296d03146ee7857165b95112372ad0d67e87f
+#7 extracting sha256:d9d511d19a19ebdeda520e0752f184d457905c7a310df5b748d133a51274ecd4
+#7 extracting sha256:d9d511d19a19ebdeda520e0752f184d457905c7a310df5b748d133a51274ecd4 0.2s done
+#7 DONE 9.8s
+
+#7 [1/3] FROM docker.io/library/eclipse-temurin:25-jre@sha256:dbb43d81099eec91e0800226ed2296d03146ee7857165b95112372ad0d67e87f
+#7 extracting sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960
+#7 extracting sha256:9abc7098f0edd8e5e0024ec883118ddbf67dce21e8cc87c12ce2f5b876311960 1.3s done
+#7 DONE 11.1s
+
+#7 [1/3] FROM docker.io/library/eclipse-temurin:25-jre@sha256:dbb43d81099eec91e0800226ed2296d03146ee7857165b95112372ad0d67e87f
+#7 extracting sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149
+#7 extracting sha256:5787b8fa2914f071f8979c0b733a6af9b21a41a1aaf9054aa5a0592a72730149 3.9s done
+#7 DONE 15.0s
+
+#7 [1/3] FROM docker.io/library/eclipse-temurin:25-jre@sha256:dbb43d81099eec91e0800226ed2296d03146ee7857165b95112372ad0d67e87f
+#7 extracting sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 0.1s done
+#7 DONE 15.1s
+
+#7 [1/3] FROM docker.io/library/eclipse-temurin:25-jre@sha256:dbb43d81099eec91e0800226ed2296d03146ee7857165b95112372ad0d67e87f
+#7 extracting sha256:2e60e4e3b521aebc38aa941d295e6e73315c6b6be8156fd0297756d3f006ad9b
+#7 extracting sha256:2e60e4e3b521aebc38aa941d295e6e73315c6b6be8156fd0297756d3f006ad9b 0.2s done
+#7 DONE 15.4s
+
+#8 [2/3] WORKDIR /app
+#8 DONE 0.0s
+
+#9 [3/3] COPY target/backend-academico-0.0.12-SNAPSHOT.jar app.jar
+#9 DONE 0.2s
+
+#10 exporting to docker image format
+#10 exporting layers
+#10 exporting layers 4.1s done
+#10 exporting manifest sha256:f2b2ced55d45a7a0ac52c9b05b059b5889d6b4e2646226c8501fa577e4791c52 done
+#10 exporting config sha256:3fa95defc90a74b4258415b5bf292235a560fc59753d09237f9192d61fb4d822 0.0s done
+#10 sending tarball
+#10 ...
+
+#11 importing to docker
+#11 DONE 0.0s
+
+#10 exporting to docker image format
+#10 sending tarball 11.5s done
+#10 DONE 15.6s
+
+#12 resolving provenance for metadata file
+#12 DONE 0.0s
+ Image curso-u12-main-app Built

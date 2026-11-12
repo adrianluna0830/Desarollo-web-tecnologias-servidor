@@ -1,0 +1,271 @@
+app-1  |
+app-1  |   .   ____          _            __ _ _
+app-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+app-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+app-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+app-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+app-1  |  =========|_|==============|___/=/_/_/_/
+app-1  |
+app-1  |  :: Spring Boot ::                (v4.1.0)
+app-1  |
+app-1  | 2026-10-20T02:34:29.288Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Starting BackendAcademicoApplication v0.0.12-SNAPSHOT using Java 25.0.4.1 with PID 1 (/app/app.jar started by root in /app)
+app-1  | 2026-10-20T02:34:29.301Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : No active profile set, falling back to 1 default profile: "jpa"
+app-1  | 2026-10-20T02:34:32.521Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+app-1  | 2026-10-20T02:34:32.646Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 3 JPA repository interfaces.
+app-1  | 2026-10-20T02:34:34.792Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+app-1  | 2026-10-20T02:34:34.829Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+app-1  | 2026-10-20T02:34:34.830Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+app-1  | 2026-10-20T02:34:34.889Z  INFO 1 --- [backend-academico] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 5398 ms
+app-1  | 2026-10-20T02:34:36.138Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+app-1  | 2026-10-20T02:34:36.681Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7308c820
+app-1  | 2026-10-20T02:34:36.686Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+app-1  | 2026-10-20T02:34:36.766Z  INFO 1 --- [backend-academico] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://postgres:5432/academico (PostgreSQL 17.11)
+app-1  | 2026-10-20T02:34:36.933Z  INFO 1 --- [backend-academico] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+app-1  | 2026-10-20T02:34:36.942Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.047s)
+app-1  | 2026-10-20T02:34:36.973Z  INFO 1 --- [backend-academico] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+app-1  | 2026-10-20T02:34:37.075Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+app-1  | 2026-10-20T02:34:37.089Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - crear alumnos"
+app-1  | 2026-10-20T02:34:37.146Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - crear materias e inscripciones"
+app-1  | 2026-10-20T02:34:37.194Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "public", now at version v2 (execution time 00:00.054s)
+app-1  | 2026-10-20T02:34:37.543Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+app-1  | 2026-10-20T02:34:37.752Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+app-1  | 2026-10-20T02:34:38.982Z  INFO 1 --- [backend-academico] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+app-1  | 2026-10-20T02:34:39.229Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+app-1  | 	Database JDBC URL [jdbc:postgresql://postgres:5432/academico]
+app-1  | 	Database driver: PostgreSQL JDBC Driver
+app-1  | 	Database dialect: PostgreSQLDialect
+app-1  | 	Database version: 17.11
+app-1  | 	Default catalog/schema: academico/public
+app-1  | 	Autocommit mode: undefined/unknown
+app-1  | 	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+app-1  | 	JDBC fetch size: none
+app-1  | 	Pool: DataSourceConnectionProvider
+app-1  | 	Minimum pool size: undefined/unknown
+app-1  | 	Maximum pool size: undefined/unknown
+app-1  | 2026-10-20T02:34:41.285Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+app-1  | 2026-10-20T02:34:41.393Z  INFO 1 --- [backend-academico] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+app-1  | 2026-10-20T02:34:41.458Z  INFO 1 --- [backend-academico] [           main] m.e.backendacademico.config.CicloDeVida  : bean inicializado en 2026-10-20T02:34:41.458239759Z
+app-1  | 2026-10-20T02:34:41.623Z  INFO 1 --- [backend-academico] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+app-1  | 2026-10-20T02:34:43.703Z  INFO 1 --- [backend-academico] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
+app-1  | 2026-10-20T02:34:44.878Z  INFO 1 --- [backend-academico] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+app-1  | 2026-10-20T02:34:45.041Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+app-1  | 2026-10-20T02:34:45.068Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Started BackendAcademicoApplication in 17.21 seconds (process running for 18.729)
+app-1  | 2026-10-20T02:34:49.352Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+app-1  | 2026-10-20T02:34:49.353Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+app-1  | 2026-10-20T02:34:49.356Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+app-1  | 2026-10-20T02:35:45.113Z  INFO 1 --- [backend-academico] [   scheduling-1] m.e.b.service.ResumenProgramado          : total de inscripciones=0
+app-1  |
+app-1  |   .   ____          _            __ _ _
+app-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+app-1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+app-1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+app-1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+app-1  |  =========|_|==============|___/=/_/_/_/
+app-1  |
+app-1  |  :: Spring Boot ::                (v4.1.0)
+app-1  |
+app-1  | 2026-10-20T02:35:48.909Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Starting BackendAcademicoApplication v0.0.12-SNAPSHOT using Java 25.0.4.1 with PID 1 (/app/app.jar started by root in /app)
+app-1  | 2026-10-20T02:35:48.915Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : No active profile set, falling back to 1 default profile: "jpa"
+app-1  | 2026-10-20T02:35:50.778Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+app-1  | 2026-10-20T02:35:50.868Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+app-1  | 2026-10-20T02:35:52.064Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+app-1  | 2026-10-20T02:35:52.090Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+app-1  | 2026-10-20T02:35:52.091Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+app-1  | 2026-10-20T02:35:52.132Z  INFO 1 --- [backend-academico] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3105 ms
+app-1  | 2026-10-20T02:35:52.913Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+app-1  | 2026-10-20T02:35:53.319Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7308c820
+app-1  | 2026-10-20T02:35:53.322Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+app-1  | 2026-10-20T02:35:53.361Z  INFO 1 --- [backend-academico] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://postgres:5432/academico (PostgreSQL 17.11)
+app-1  | 2026-10-20T02:35:53.482Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.044s)
+app-1  | 2026-10-20T02:35:53.523Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 2
+app-1  | 2026-10-20T02:35:53.538Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+app-1  | 2026-10-20T02:35:53.747Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+app-1  | 2026-10-20T02:35:53.863Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+app-1  | 2026-10-20T02:35:54.683Z  INFO 1 --- [backend-academico] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+app-1  | 2026-10-20T02:35:54.836Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+app-1  | 	Database JDBC URL [jdbc:postgresql://postgres:5432/academico]
+app-1  | 	Database driver: PostgreSQL JDBC Driver
+app-1  | 	Database dialect: PostgreSQLDialect
+app-1  | 	Database version: 17.11
+app-1  | 	Default catalog/schema: academico/public
+app-1  | 	Autocommit mode: undefined/unknown
+app-1  | 	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+app-1  | 	JDBC fetch size: none
+app-1  | 	Pool: DataSourceConnectionProvider
+app-1  | 	Minimum pool size: undefined/unknown
+app-1  | 	Maximum pool size: undefined/unknown
+app-1  | 2026-10-20T02:35:56.083Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+app-1  | 2026-10-20T02:35:56.145Z  INFO 1 --- [backend-academico] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+app-1  | 2026-10-20T02:35:56.188Z  INFO 1 --- [backend-academico] [           main] m.e.backendacademico.config.CicloDeVida  : bean inicializado en 2026-10-20T02:35:56.188870172Z
+app-1  | 2026-10-20T02:35:56.322Z  INFO 1 --- [backend-academico] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+app-1  | 2026-10-20T02:35:58.323Z  INFO 1 --- [backend-academico] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
+app-1  | 2026-10-20T02:35:59.305Z  INFO 1 --- [backend-academico] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+app-1  | 2026-10-20T02:35:59.438Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+app-1  | 2026-10-20T02:35:59.458Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Started BackendAcademicoApplication in 11.323 seconds (process running for 12.21)
+app-1  | 2026-10-20T02:35:59.522Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+app-1  | 2026-10-20T02:35:59.523Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+app-1  | 2026-10-20T02:35:59.524Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+app-1  | 2026-10-20T02:36:00.421Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@7308c820 marked as broken because of SQLSTATE(08003), ErrorCode(0)
+app-1  |
+app-1  | org.postgresql.util.PSQLException: This connection has been closed.
+app-1  | 	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:1026) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	at org.postgresql.jdbc.PgConnection.clearWarnings(PgConnection.java:918) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	at com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:258) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at org.springframework.jdbc.datasource.DataSourceUtils.doCloseConnection(DataSourceUtils.java:432) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:419) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.jdbc.datasource.DataSourceUtils.releaseConnection(DataSourceUtils.java:386) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:377) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.boot.jdbc.health.DataSourceHealthIndicator.isConnectionValid(DataSourceHealthIndicator.java:133) ~[spring-boot-jdbc-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.jdbc.health.DataSourceHealthIndicator.doDataSourceHealthCheck(DataSourceHealthIndicator.java:119) ~[spring-boot-jdbc-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.jdbc.health.DataSourceHealthIndicator.doHealthCheck(DataSourceHealthIndicator.java:102) ~[spring-boot-jdbc-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.contributor.AbstractHealthIndicator.health(AbstractHealthIndicator.java:80) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.contributor.HealthIndicator.health(HealthIndicator.java:37) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.actuate.endpoint.Contributor$Blocking.getDescriptor(Contributor.java:148) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.actuate.endpoint.Contributor$Blocking.getDescriptor(Contributor.java:126) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptorAndLogIfSlow(HealthEndpointSupport.java:172) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptor(HealthEndpointSupport.java:145) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getAggregateDescriptor(HealthEndpointSupport.java:157) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getDescriptor(HealthEndpointSupport.java:141) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getResult(HealthEndpointSupport.java:110) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.actuate.endpoint.HealthEndpointSupport.getResult(HealthEndpointSupport.java:80) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.actuate.endpoint.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:85) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.health.actuate.endpoint.HealthEndpointWebExtension.health(HealthEndpointWebExtension.java:79) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
+app-1  | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+app-1  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+app-1  | 	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281) ~[spring-core-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76) ~[spring-boot-actuator-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:62) ~[spring-boot-actuator-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.webmvc.actuate.endpoint.web.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:347) ~[spring-boot-webmvc-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.webmvc.actuate.endpoint.web.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:476) ~[spring-boot-webmvc-4.1.0.jar!/:4.1.0]
+app-1  | 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source) ~[na:na]
+app-1  | 	at java.base/java.lang.reflect.Method.invoke(Unknown Source) ~[na:na]
+app-1  | 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000) ~[spring-webmvc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.8.jar!/:7.0.8]
+app-1  | 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.8.jar!/:7.0.8]
+app-1  | 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.22.jar!/:na]
+app-1  | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:491) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:353) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:84) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:131) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:198) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:118) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:336) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.1.0.jar!/:7.1.0]
+app-1  | 	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar!/:na]
+app-1  | 	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+app-1  |
+app-1  | 2026-10-20T02:36:00.699Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@58c3c734 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:36:00.700Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5cfc58f4 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:36:00.701Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@19fecd0f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:36:00.702Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6e1155a7 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:36:00.703Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@282dd536 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:36:00.704Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1628133f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:36:00.705Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@79d13240 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:36:00.705Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1d09ecb0 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:36:00.706Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5bcb0e42 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:36:30.509Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] o.s.b.h.a.e.HealthEndpointSupport        : Health contributor org.springframework.boot.jdbc.health.DataSourceHealthIndicator (db) took 29807ms to respond
+app-1  | 2026-10-20T02:36:59.555Z  INFO 1 --- [backend-academico] [   scheduling-1] m.e.b.service.ResumenProgramado          : total de inscripciones=0
