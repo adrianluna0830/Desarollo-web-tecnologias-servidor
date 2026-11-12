@@ -9,7 +9,7 @@ export PATH="$JAVA_HOME/bin:$PATH"
 ./mvnw clean verify
 docker compose -p curso-u12 build
 docker compose -p curso-u12 up -d
-python3 verificar.py --proyecto curso-u12
+python3 verificar.py --proyecto curso-u12 --propietario
 docker compose -p curso-u12 down
 ```
 
@@ -28,3 +28,5 @@ export TESTCONTAINERS_RYUK_DISABLED=true
 las pruebas crean bases temporales con testcontainers. los registros de la ejecucion estan en evidencias. los documentos estan en documentos.
 
 la cache es local para una sola jvm de laboratorio: ahorra lecturas y se invalida despues de confirmar cambios. con varias replicas se debe sustituir por una cache compartida con expiracion o desactivar este administrador. un resultado cacheado no sustituye la comprobacion del propietario.
+
+mi-expediente usa el principal autenticado y la relacion cuentas_alumnos. el verificador vincula la cuenta alumno a su registro de laboratorio; un alumno ajeno recibe 403 y admin puede consultar por id. la lectura general de alumnos queda reservada a docente y admin.

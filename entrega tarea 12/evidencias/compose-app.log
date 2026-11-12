@@ -8,29 +8,30 @@ app-1  |  =========|_|==============|___/=/_/_/_/
 app-1  |
 app-1  |  :: Spring Boot ::                (v4.1.0)
 app-1  |
-app-1  | 2026-10-20T02:34:29.288Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Starting BackendAcademicoApplication v0.0.12-SNAPSHOT using Java 25.0.4.1 with PID 1 (/app/app.jar started by root in /app)
-app-1  | 2026-10-20T02:34:29.301Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : No active profile set, falling back to 1 default profile: "jpa"
-app-1  | 2026-10-20T02:34:32.521Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-app-1  | 2026-10-20T02:34:32.646Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 3 JPA repository interfaces.
-app-1  | 2026-10-20T02:34:34.792Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-app-1  | 2026-10-20T02:34:34.829Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-app-1  | 2026-10-20T02:34:34.830Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
-app-1  | 2026-10-20T02:34:34.889Z  INFO 1 --- [backend-academico] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 5398 ms
-app-1  | 2026-10-20T02:34:36.138Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-app-1  | 2026-10-20T02:34:36.681Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7308c820
-app-1  | 2026-10-20T02:34:36.686Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-app-1  | 2026-10-20T02:34:36.766Z  INFO 1 --- [backend-academico] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://postgres:5432/academico (PostgreSQL 17.11)
-app-1  | 2026-10-20T02:34:36.933Z  INFO 1 --- [backend-academico] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
-app-1  | 2026-10-20T02:34:36.942Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.047s)
-app-1  | 2026-10-20T02:34:36.973Z  INFO 1 --- [backend-academico] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
-app-1  | 2026-10-20T02:34:37.075Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
-app-1  | 2026-10-20T02:34:37.089Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - crear alumnos"
-app-1  | 2026-10-20T02:34:37.146Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - crear materias e inscripciones"
-app-1  | 2026-10-20T02:34:37.194Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 2 migrations to schema "public", now at version v2 (execution time 00:00.054s)
-app-1  | 2026-10-20T02:34:37.543Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-app-1  | 2026-10-20T02:34:37.752Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
-app-1  | 2026-10-20T02:34:38.982Z  INFO 1 --- [backend-academico] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-app-1  | 2026-10-20T02:34:39.229Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+app-1  | 2026-10-20T02:38:24.824Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Starting BackendAcademicoApplication v0.0.12-SNAPSHOT using Java 25.0.4.1 with PID 1 (/app/app.jar started by root in /app)
+app-1  | 2026-10-20T02:38:24.833Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : No active profile set, falling back to 1 default profile: "jpa"
+app-1  | 2026-10-20T02:38:26.713Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+app-1  | 2026-10-20T02:38:26.816Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 3 JPA repository interfaces.
+app-1  | 2026-10-20T02:38:28.098Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+app-1  | 2026-10-20T02:38:28.128Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+app-1  | 2026-10-20T02:38:28.129Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+app-1  | 2026-10-20T02:38:28.180Z  INFO 1 --- [backend-academico] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3183 ms
+app-1  | 2026-10-20T02:38:29.233Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+app-1  | 2026-10-20T02:38:29.620Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d601832
+app-1  | 2026-10-20T02:38:29.623Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+app-1  | 2026-10-20T02:38:29.664Z  INFO 1 --- [backend-academico] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://postgres:5432/academico (PostgreSQL 17.11)
+app-1  | 2026-10-20T02:38:29.790Z  INFO 1 --- [backend-academico] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+app-1  | 2026-10-20T02:38:29.795Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.028s)
+app-1  | 2026-10-20T02:38:29.816Z  INFO 1 --- [backend-academico] [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+app-1  | 2026-10-20T02:38:29.892Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+app-1  | 2026-10-20T02:38:29.906Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - crear alumnos"
+app-1  | 2026-10-20T02:38:29.949Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "2 - crear materias e inscripciones"
+app-1  | 2026-10-20T02:38:29.983Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "3 - cuentas alumnos"
+app-1  | 2026-10-20T02:38:30.005Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "public", now at version v3 (execution time 00:00.047s)
+app-1  | 2026-10-20T02:38:30.214Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+app-1  | 2026-10-20T02:38:30.317Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+app-1  | 2026-10-20T02:38:31.273Z  INFO 1 --- [backend-academico] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+app-1  | 2026-10-20T02:38:31.433Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 app-1  | 	Database JDBC URL [jdbc:postgresql://postgres:5432/academico]
 app-1  | 	Database driver: PostgreSQL JDBC Driver
 app-1  | 	Database dialect: PostgreSQLDialect
@@ -42,18 +43,18 @@ app-1  | 	JDBC fetch size: none
 app-1  | 	Pool: DataSourceConnectionProvider
 app-1  | 	Minimum pool size: undefined/unknown
 app-1  | 	Maximum pool size: undefined/unknown
-app-1  | 2026-10-20T02:34:41.285Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-app-1  | 2026-10-20T02:34:41.393Z  INFO 1 --- [backend-academico] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-app-1  | 2026-10-20T02:34:41.458Z  INFO 1 --- [backend-academico] [           main] m.e.backendacademico.config.CicloDeVida  : bean inicializado en 2026-10-20T02:34:41.458239759Z
-app-1  | 2026-10-20T02:34:41.623Z  INFO 1 --- [backend-academico] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-app-1  | 2026-10-20T02:34:43.703Z  INFO 1 --- [backend-academico] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
-app-1  | 2026-10-20T02:34:44.878Z  INFO 1 --- [backend-academico] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
-app-1  | 2026-10-20T02:34:45.041Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-app-1  | 2026-10-20T02:34:45.068Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Started BackendAcademicoApplication in 17.21 seconds (process running for 18.729)
-app-1  | 2026-10-20T02:34:49.352Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-app-1  | 2026-10-20T02:34:49.353Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-app-1  | 2026-10-20T02:34:49.356Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-app-1  | 2026-10-20T02:35:45.113Z  INFO 1 --- [backend-academico] [   scheduling-1] m.e.b.service.ResumenProgramado          : total de inscripciones=0
+app-1  | 2026-10-20T02:38:33.283Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+app-1  | 2026-10-20T02:38:33.374Z  INFO 1 --- [backend-academico] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+app-1  | 2026-10-20T02:38:33.418Z  INFO 1 --- [backend-academico] [           main] m.e.backendacademico.config.CicloDeVida  : bean inicializado en 2026-10-20T02:38:33.418712105Z
+app-1  | 2026-10-20T02:38:33.565Z  INFO 1 --- [backend-academico] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+app-1  | 2026-10-20T02:38:35.536Z  INFO 1 --- [backend-academico] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
+app-1  | 2026-10-20T02:38:36.468Z  INFO 1 --- [backend-academico] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+app-1  | 2026-10-20T02:38:36.592Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+app-1  | 2026-10-20T02:38:36.613Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Started BackendAcademicoApplication in 12.786 seconds (process running for 13.885)
+app-1  | 2026-10-20T02:38:37.536Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+app-1  | 2026-10-20T02:38:37.536Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+app-1  | 2026-10-20T02:38:37.540Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+app-1  | 2026-10-20T02:39:36.644Z  INFO 1 --- [backend-academico] [   scheduling-1] m.e.b.service.ResumenProgramado          : total de inscripciones=0
 app-1  |
 app-1  |   .   ____          _            __ _ _
 app-1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -64,25 +65,25 @@ app-1  |  =========|_|==============|___/=/_/_/_/
 app-1  |
 app-1  |  :: Spring Boot ::                (v4.1.0)
 app-1  |
-app-1  | 2026-10-20T02:35:48.909Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Starting BackendAcademicoApplication v0.0.12-SNAPSHOT using Java 25.0.4.1 with PID 1 (/app/app.jar started by root in /app)
-app-1  | 2026-10-20T02:35:48.915Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : No active profile set, falling back to 1 default profile: "jpa"
-app-1  | 2026-10-20T02:35:50.778Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-app-1  | 2026-10-20T02:35:50.868Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
-app-1  | 2026-10-20T02:35:52.064Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-app-1  | 2026-10-20T02:35:52.090Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-app-1  | 2026-10-20T02:35:52.091Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
-app-1  | 2026-10-20T02:35:52.132Z  INFO 1 --- [backend-academico] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3105 ms
-app-1  | 2026-10-20T02:35:52.913Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-app-1  | 2026-10-20T02:35:53.319Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7308c820
-app-1  | 2026-10-20T02:35:53.322Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-app-1  | 2026-10-20T02:35:53.361Z  INFO 1 --- [backend-academico] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://postgres:5432/academico (PostgreSQL 17.11)
-app-1  | 2026-10-20T02:35:53.482Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.044s)
-app-1  | 2026-10-20T02:35:53.523Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 2
-app-1  | 2026-10-20T02:35:53.538Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
-app-1  | 2026-10-20T02:35:53.747Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-app-1  | 2026-10-20T02:35:53.863Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
-app-1  | 2026-10-20T02:35:54.683Z  INFO 1 --- [backend-academico] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-app-1  | 2026-10-20T02:35:54.836Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+app-1  | 2026-10-20T02:39:39.078Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Starting BackendAcademicoApplication v0.0.12-SNAPSHOT using Java 25.0.4.1 with PID 1 (/app/app.jar started by root in /app)
+app-1  | 2026-10-20T02:39:39.087Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : No active profile set, falling back to 1 default profile: "jpa"
+app-1  | 2026-10-20T02:39:40.844Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+app-1  | 2026-10-20T02:39:40.926Z  INFO 1 --- [backend-academico] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+app-1  | 2026-10-20T02:39:42.237Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+app-1  | 2026-10-20T02:39:42.261Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+app-1  | 2026-10-20T02:39:42.262Z  INFO 1 --- [backend-academico] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+app-1  | 2026-10-20T02:39:42.300Z  INFO 1 --- [backend-academico] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3109 ms
+app-1  | 2026-10-20T02:39:43.107Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+app-1  | 2026-10-20T02:39:43.463Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d601832
+app-1  | 2026-10-20T02:39:43.466Z  INFO 1 --- [backend-academico] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+app-1  | 2026-10-20T02:39:43.501Z  INFO 1 --- [backend-academico] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://postgres:5432/academico (PostgreSQL 17.11)
+app-1  | 2026-10-20T02:39:43.637Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.052s)
+app-1  | 2026-10-20T02:39:43.658Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 3
+app-1  | 2026-10-20T02:39:43.673Z  INFO 1 --- [backend-academico] [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+app-1  | 2026-10-20T02:39:43.863Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+app-1  | 2026-10-20T02:39:43.960Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+app-1  | 2026-10-20T02:39:44.596Z  INFO 1 --- [backend-academico] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+app-1  | 2026-10-20T02:39:44.721Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 app-1  | 	Database JDBC URL [jdbc:postgresql://postgres:5432/academico]
 app-1  | 	Database driver: PostgreSQL JDBC Driver
 app-1  | 	Database dialect: PostgreSQLDialect
@@ -94,29 +95,34 @@ app-1  | 	JDBC fetch size: none
 app-1  | 	Pool: DataSourceConnectionProvider
 app-1  | 	Minimum pool size: undefined/unknown
 app-1  | 	Maximum pool size: undefined/unknown
-app-1  | 2026-10-20T02:35:56.083Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-app-1  | 2026-10-20T02:35:56.145Z  INFO 1 --- [backend-academico] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-app-1  | 2026-10-20T02:35:56.188Z  INFO 1 --- [backend-academico] [           main] m.e.backendacademico.config.CicloDeVida  : bean inicializado en 2026-10-20T02:35:56.188870172Z
-app-1  | 2026-10-20T02:35:56.322Z  INFO 1 --- [backend-academico] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-app-1  | 2026-10-20T02:35:58.323Z  INFO 1 --- [backend-academico] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
-app-1  | 2026-10-20T02:35:59.305Z  INFO 1 --- [backend-academico] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
-app-1  | 2026-10-20T02:35:59.438Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-app-1  | 2026-10-20T02:35:59.458Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Started BackendAcademicoApplication in 11.323 seconds (process running for 12.21)
-app-1  | 2026-10-20T02:35:59.522Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-app-1  | 2026-10-20T02:35:59.523Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-app-1  | 2026-10-20T02:35:59.524Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-app-1  | 2026-10-20T02:36:00.421Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@7308c820 marked as broken because of SQLSTATE(08003), ErrorCode(0)
+app-1  | 2026-10-20T02:39:46.079Z  INFO 1 --- [backend-academico] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+app-1  | 2026-10-20T02:39:46.155Z  INFO 1 --- [backend-academico] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+app-1  | 2026-10-20T02:39:46.198Z  INFO 1 --- [backend-academico] [           main] m.e.backendacademico.config.CicloDeVida  : bean inicializado en 2026-10-20T02:39:46.197987358Z
+app-1  | 2026-10-20T02:39:46.311Z  INFO 1 --- [backend-academico] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+app-1  | 2026-10-20T02:39:48.368Z  INFO 1 --- [backend-academico] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name users
+app-1  | 2026-10-20T02:39:49.487Z  INFO 1 --- [backend-academico] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+app-1  | 2026-10-20T02:39:49.628Z  INFO 1 --- [backend-academico] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+app-1  | 2026-10-20T02:39:49.651Z  INFO 1 --- [backend-academico] [           main] m.e.b.BackendAcademicoApplication        : Started BackendAcademicoApplication in 11.396 seconds (process running for 12.266)
+app-1  | 2026-10-20T02:39:49.696Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+app-1  | 2026-10-20T02:39:49.696Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+app-1  | 2026-10-20T02:39:49.699Z  INFO 1 --- [backend-academico] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+app-1  | 2026-10-20T02:39:50.880Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5d601832 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:39:50.882Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4de1a024 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:39:50.883Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@287f036f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:39:50.883Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@f1d7674 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:39:50.884Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3e5ca8fe (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:39:50.885Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7efccf91 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:39:50.885Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2ec8df5a (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:39:50.886Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4a82a221 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:39:50.887Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1142f8d7 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:39:50.888Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@95a3d29 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+app-1  | 2026-10-20T02:40:20.879Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] o.s.b.j.h.DataSourceHealthIndicator      : DataSource health check failed
 app-1  |
-app-1  | org.postgresql.util.PSQLException: This connection has been closed.
-app-1  | 	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:1026) ~[postgresql-42.7.11.jar!/:42.7.11]
-app-1  | 	at org.postgresql.jdbc.PgConnection.clearWarnings(PgConnection.java:918) ~[postgresql-42.7.11.jar!/:42.7.11]
-app-1  | 	at com.zaxxer.hikari.pool.ProxyConnection.close(ProxyConnection.java:258) ~[HikariCP-7.0.2.jar!/:na]
-app-1  | 	at org.springframework.jdbc.datasource.DataSourceUtils.doCloseConnection(DataSourceUtils.java:432) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
-app-1  | 	at org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection(DataSourceUtils.java:419) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
-app-1  | 	at org.springframework.jdbc.datasource.DataSourceUtils.releaseConnection(DataSourceUtils.java:386) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
-app-1  | 	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:377) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
-app-1  | 	at org.springframework.boot.jdbc.health.DataSourceHealthIndicator.isConnectionValid(DataSourceHealthIndicator.java:133) ~[spring-boot-jdbc-4.1.0.jar!/:4.1.0]
-app-1  | 	at org.springframework.boot.jdbc.health.DataSourceHealthIndicator.doDataSourceHealthCheck(DataSourceHealthIndicator.java:119) ~[spring-boot-jdbc-4.1.0.jar!/:4.1.0]
+app-1  | org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+app-1  | 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:362) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.boot.jdbc.health.DataSourceHealthIndicator.getProduct(DataSourceHealthIndicator.java:125) ~[spring-boot-jdbc-4.1.0.jar!/:4.1.0]
+app-1  | 	at org.springframework.boot.jdbc.health.DataSourceHealthIndicator.doDataSourceHealthCheck(DataSourceHealthIndicator.java:108) ~[spring-boot-jdbc-4.1.0.jar!/:4.1.0]
 app-1  | 	at org.springframework.boot.jdbc.health.DataSourceHealthIndicator.doHealthCheck(DataSourceHealthIndicator.java:102) ~[spring-boot-jdbc-4.1.0.jar!/:4.1.0]
 app-1  | 	at org.springframework.boot.health.contributor.AbstractHealthIndicator.health(AbstractHealthIndicator.java:80) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
 app-1  | 	at org.springframework.boot.health.contributor.HealthIndicator.health(HealthIndicator.java:37) ~[spring-boot-health-4.1.0.jar!/:4.1.0]
@@ -257,15 +263,52 @@ app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadP
 app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.22.jar!/:na]
 app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.22.jar!/:na]
 app-1  | 	at java.base/java.lang.Thread.run(Unknown Source) ~[na:na]
+app-1  | Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30001ms (total=0, active=0, idle=0, waiting=0)
+app-1  | 	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:714) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:184) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:142) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:127) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
+app-1  | 	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81) ~[spring-jdbc-7.0.8.jar!/:7.0.8]
+app-1  | 	... 143 common frames omitted
+app-1  | Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+app-1  | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:437) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:52) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:290) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:373) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:210) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:752) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:731) ~[HikariCP-7.0.2.jar!/:na]
+app-1  | 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source) ~[na:na]
+app-1  | 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[na:na]
+app-1  | 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:na]
+app-1  | 	... 1 common frames omitted
+app-1  | Caused by: java.net.SocketTimeoutException: Connect timed out
+app-1  | 	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source) ~[na:na]
+app-1  | 	at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source) ~[na:na]
+app-1  | 	at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+app-1  | 	at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+app-1  | 	at org.postgresql.core.PGStream.createSocket(PGStream.java:271) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	at org.postgresql.core.PGStream.<init>(PGStream.java:132) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:219) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:365) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 	... 14 common frames omitted
+app-1  | 	Suppressed: java.net.SocketTimeoutException: Connect timed out
+app-1  | 		at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(Unknown Source) ~[na:na]
+app-1  | 		at java.base/sun.nio.ch.NioSocketImpl.connect(Unknown Source) ~[na:na]
+app-1  | 		at java.base/java.net.SocksSocketImpl.connect(Unknown Source) ~[na:na]
+app-1  | 		at java.base/java.net.Socket.connect(Unknown Source) ~[na:na]
+app-1  | 		at org.postgresql.core.PGStream.createSocket(PGStream.java:271) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 		at org.postgresql.core.PGStream.<init>(PGStream.java:132) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:219) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnectWithoutSsl(ConnectionFactoryImpl.java:145) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:380) ~[postgresql-42.7.11.jar!/:42.7.11]
+app-1  | 		... 14 common frames omitted
 app-1  |
-app-1  | 2026-10-20T02:36:00.699Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@58c3c734 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
-app-1  | 2026-10-20T02:36:00.700Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5cfc58f4 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
-app-1  | 2026-10-20T02:36:00.701Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@19fecd0f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
-app-1  | 2026-10-20T02:36:00.702Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6e1155a7 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
-app-1  | 2026-10-20T02:36:00.703Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@282dd536 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
-app-1  | 2026-10-20T02:36:00.704Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1628133f (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
-app-1  | 2026-10-20T02:36:00.705Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@79d13240 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
-app-1  | 2026-10-20T02:36:00.705Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@1d09ecb0 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
-app-1  | 2026-10-20T02:36:00.706Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5bcb0e42 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
-app-1  | 2026-10-20T02:36:30.509Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] o.s.b.h.a.e.HealthEndpointSupport        : Health contributor org.springframework.boot.jdbc.health.DataSourceHealthIndicator (db) took 29807ms to respond
-app-1  | 2026-10-20T02:36:59.555Z  INFO 1 --- [backend-academico] [   scheduling-1] m.e.b.service.ResumenProgramado          : total de inscripciones=0
+app-1  | 2026-10-20T02:40:20.888Z  WARN 1 --- [backend-academico] [nio-8080-exec-3] o.s.b.h.a.e.HealthEndpointSupport        : Health contributor org.springframework.boot.jdbc.health.DataSourceHealthIndicator (db) took 30010ms to respond
+app-1  | 2026-10-20T02:40:32.297Z  WARN 1 --- [backend-academico] [nio-8080-exec-5] o.s.b.h.a.e.HealthEndpointSupport        : Health contributor org.springframework.boot.jdbc.health.DataSourceHealthIndicator (db) took 11038ms to respond

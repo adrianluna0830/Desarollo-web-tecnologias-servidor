@@ -22,7 +22,8 @@ public class SecurityConfig {
             .requestMatchers("/actuator/health", "/actuator/health/**").permitAll()
             .requestMatchers("/actuator/**").hasRole("ADMIN")
             .requestMatchers("/api/v1/csrf").authenticated()
-            .requestMatchers(HttpMethod.GET, "/api/v1/alumnos/**").hasAnyRole("ALUMNO", "DOCENTE", "ADMIN")
+            .requestMatchers(HttpMethod.GET, "/api/v1/mi-expediente", "/api/v1/expedientes/**").hasAnyRole("ALUMNO", "ADMIN")
+            .requestMatchers(HttpMethod.GET, "/api/v1/alumnos/**").hasAnyRole("DOCENTE", "ADMIN")
             .requestMatchers("/api/v1/**").hasAnyRole("DOCENTE", "ADMIN")
             .anyRequest().denyAll());
         http.httpBasic(withDefaults());

@@ -1,4 +1,4 @@
-exito: 201; location=/api/v1/alumnos/1; matricula=f155707f7528c
+exito: 201; location=/api/v1/alumnos/1; matricula=f5e63492527f3
 validacion: 400
 ausencia: 404
 conflicto: 409
@@ -8,6 +8,7 @@ alumno con csrf y rol insuficiente: 403
 metricas: alumno 403; admin 200
 openapi: 200
 cache: dos consultas; cambio y lectura actualizada; el test de cache comprueba llamadas al repositorio
+propietario: expediente propio 200; ajeno 403; admin 200
 resumen programado: contador >= 1
 reinicio de app: alumno persistente, consulta 200
 postgres detenido: readiness 503 DOWN

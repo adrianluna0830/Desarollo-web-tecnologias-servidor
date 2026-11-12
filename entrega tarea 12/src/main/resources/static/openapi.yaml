@@ -34,7 +34,7 @@ paths:
   /api/v1/alumnos:
     get:
       summary: Lista alumnos del laboratorio
-      description: Conjunto pequeño sin paginación. Roles ALUMNO, DOCENTE o ADMIN.
+      description: Conjunto pequeño sin paginación. roles docente o admin. el alumno usa mi-expediente.
       responses:
         '200':
           description: Lista, posiblemente vacía
@@ -192,6 +192,63 @@ paths:
         '404': {$ref: '#/components/responses/Problema'}
         '401': {$ref: '#/components/responses/NoAutenticado'}
         '403': {$ref: '#/components/responses/Prohibido'}
+  /api/v1/mi-expediente:
+    get:
+      summary: consulta el expediente del principal autenticado
+      responses:
+        '200':
+          description: expediente propio
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Alumno'}
+        '401': {$ref: '#/components/responses/NoAutenticado'}
+        '403': {$ref: '#/components/responses/Prohibido'}
+  /api/v1/expedientes/{id}:
+    get:
+      summary: consulta por propietario o administrador
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: {type: integer, format: int64}
+      responses:
+        '200':
+          description: expediente autorizado
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Alumno'}
+        '401': {$ref: '#/components/responses/NoAutenticado'}
+        '403': {$ref: '#/components/responses/Prohibido'}
+        '404': {$ref: '#/components/responses/Problema'}
+  /actuator/health:
+    get:
+      summary: salud general
+      security: []
+      responses:
+        '200': {description: saludable}
+        '503': {description: componente no disponible}
+  /actuator/health/liveness:
+    get:
+      summary: estado del proceso
+      security: []
+      responses:
+        '200': {description: proceso activo}
+        '503': {description: proceso no disponible}
+  /actuator/health/readiness:
+    get:
+      summary: disponibilidad con postgresql
+      security: []
+      responses:
+        '200': {description: disponible}
+        '503': {description: base o aplicacion no disponible}
+  /actuator/metrics:
+    get:
+      summary: metricas reservadas a admin
+      responses:
+        '200': {description: nombres de metricas}
+        '401': {$ref: '#/components/responses/NoAutenticado'}
+        '403': {$ref: '#/components/responses/Prohibido'}
+
 components:
   securitySchemes:
     basicAuth: {type: http, scheme: basic}
